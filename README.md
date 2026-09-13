@@ -166,10 +166,10 @@ domain/product
 
 ```json
 // 성공
-{ "data": { "id": 1, "name": "노트북" } }
+{ "result": true, "error": {}, "data": { "id": 1, "name": "노트북" } }
 
 // 실패
-{ "error": { "errorCode": "NOT_FOUND_PRODUCT", "errorMessage": "상품 정보를 찾을 수 없습니다." } }
+{ "result": false, "error": { "code": "PRODUCT_NOT_FOUND", "message": "해당 상품을 찾을 수 없습니다." }, "data": {} }
 ```
 
 ---
